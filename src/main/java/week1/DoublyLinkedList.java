@@ -8,7 +8,7 @@ public class DoublyLinkedList<Data> implements Iterable<Data> {
     private int size = 0;
 
     /* Add a new node to the front of the doubly linked list */
-    public void addToFront(Data item) {
+    public void addToFront(Data data) {
         // your code
     }
 
@@ -18,7 +18,7 @@ public class DoublyLinkedList<Data> implements Iterable<Data> {
     }
 
     /* Add a new node to the end of the doubly linked list */
-    public void addToRear(Data item) {
+    public void addToRear(Data data) {
         // your code
     }
 

@@ -97,9 +97,9 @@ public class LinkedList<Data> implements Iterable<Data> {
         }                                                               // 3
 
         public Data next() {                                            // 4
-            Data item = current.data;                                   // 4
+            Data data = current.data;                                   // 4
             current = current.next;                                     // 4
-            return item;                                                // 4
+            return data;                                                // 4
         }
     }
 
