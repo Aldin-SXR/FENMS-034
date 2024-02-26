@@ -2,14 +2,14 @@ package week1;
 
 import java.util.Iterator;
 
-public class LinkedList<Item> implements Iterable<Item> {
-    private Node<Item> head;
+public class LinkedList<Data> implements Iterable<Data> {
+    private Node<Data> head;
     private int size = 0;
 
     /* Add a new item to the beginning of the list */
-    public void addToFront(Item item) {
-        Node<Item> newNode = new Node<Item>();  // 1
-        newNode.data = item;                    // 1
+    public void addToFront(Data data) {
+        Node<Data> newNode = new Node<>();      // 1
+        newNode.data = data;                    // 1
         newNode.next = head;                    // 2
         head = newNode;                         // 3
         size++;                                 // 4
@@ -25,14 +25,14 @@ public class LinkedList<Item> implements Iterable<Item> {
     }
 
     /* Add a new item to the end of the list */
-    public void addToRear(Item item) {
-        Node<Item> newNode = new Node<Item>();      // 1
-        newNode.data = item;                        // 1
+    public void addToRear(Data data) {
+        Node<Data> newNode = new Node<>();          // 1
+        newNode.data = data;                        // 1
 
         if (head == null) {                         // 2
             head = newNode;                         // 2
         } else {
-            Node<Item> current = head;              // 3
+            Node<Data> current = head;              // 3
             while (current.next != null) {          // 4
                 current = current.next;             // 4
             }                                       // 4
@@ -48,7 +48,7 @@ public class LinkedList<Item> implements Iterable<Item> {
         } else if (size == 1) {                                                 // 2
             head = null;                                                        // 2
         } else {                                                                // 3
-            Node<Item> current = head;                                          // 3
+            Node<Data> current = head;                                          // 3
             while (current.next.next != null) {                                 // 4
                 current = current.next;                                         // 4
             }                                                                   // 4
@@ -58,12 +58,12 @@ public class LinkedList<Item> implements Iterable<Item> {
     }
 
     /* Get a linked list node by index (0-indexed) */
-    public Item get(int index) {
+    public Data get(int index) {
         if (index < 0 || index >= size) {										// 1
             throw new IndexOutOfBoundsException("Invalid linked list node.");	// 1
         }
 
-        Node<Item> current = head;												// 2
+        Node<Data> current = head;												// 2
         int i = 0;																// 3
         while (i < index) {														// 4
             current = current.next;												// 4
@@ -74,7 +74,7 @@ public class LinkedList<Item> implements Iterable<Item> {
     }
 
     /* Add an element to a linked list by index (0-index) */
-    public void add(int index, Item data) {
+    public void add(int index, Data data) {
         // your code
     }
 
@@ -89,22 +89,22 @@ public class LinkedList<Item> implements Iterable<Item> {
     }
 
     /* Define the Iterator class, and hasNext() and next() methods */
-    private class LinkedListIterator implements Iterator<Item> {        // 1
-        Node<Item> current = head;                                      // 2
+    private class LinkedListIterator implements Iterator<Data> {        // 1
+        Node<Data> current = head;                                      // 2
 
         public boolean hasNext() {                                      // 3
             return current != null;                                     // 3
         }                                                               // 3
 
-        public Item next() {                                            // 4
-            Item item = current.data;                                   // 4
+        public Data next() {                                            // 4
+            Data item = current.data;                                   // 4
             current = current.next;                                     // 4
             return item;                                                // 4
         }
     }
 
     /* Return an Iterator Object */
-    public Iterator<Item> iterator() {
+    public Iterator<Data> iterator() {
         return new LinkedListIterator();
     }
 }

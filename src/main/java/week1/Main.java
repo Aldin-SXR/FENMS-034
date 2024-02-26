@@ -8,7 +8,7 @@ public class Main {
 
     private static void linkedListDemo() {
         System.out.println("Linked list demo:");
-        LinkedList<Integer> list = new LinkedList<Integer>();
+        LinkedList<Integer> list = new LinkedList<>();
 
         list.addToRear(1);
         list.addToRear(2);
@@ -27,16 +27,5 @@ public class Main {
         System.out.println("element: " + list.get(0));
         System.out.println("element: " + list.get(2));
         System.out.println("list size: " + list.count());
-
-        list.remove(2);
-
-        for (Integer i : list) {
-            System.out.println(i);
-        }
-
-        list.add(2, 10);
-        for (Integer i : list) {
-            System.out.println(i);
-        }
     }
 }

@@ -1,6 +1,12 @@
 package week1;
 
-public class Node <Item>{
-    Item data;
-    Node<Item> next;
+public class Node <Data>{
+    Data data;
+    Node<Data> next;
+
+    public Node() { }
+
+    public Node(Data data) {
+        this.data = data;
+    }
 }
