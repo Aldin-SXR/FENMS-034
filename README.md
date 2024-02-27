@@ -1,5 +1,5 @@
-# FENMS 034 - Data Structures
-Data Structures @ International Burch University (2023 - 2024)
+# FENMS 034 - Data Structures and Algorithms
+Data Structures and Algorithms @ International Burch University (2023 - 2024)
 
 ## Week 1: Introduction / Linked Lists
 - [[Week 1] Lecture slides - Introduction](https://docs.google.com/presentation/d/1Q7GcqdhCBJ9IIG2xKSpqbVzEZYiT6k8XhzCK16YjV2w/edit?usp=sharing)
