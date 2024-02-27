@@ -161,7 +161,7 @@ public class DoublyLinkedListTest {
 
         DoubleNode<Integer> node = dll.getHead();
         assertEquals(11, node.data);
-        assertNull(node.prev.data);
+        assertNull(node.prev);
         assertEquals(7, node.next.data);
 
         node = node.next;
@@ -177,7 +177,7 @@ public class DoublyLinkedListTest {
         node = node.next;
         assertEquals(8, node.data);
         assertEquals(9, node.prev.data);
-        assertNull(node.next.data);
+        assertNull(node.next);
     }
 
 }
