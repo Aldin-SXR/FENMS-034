@@ -27,5 +27,12 @@ public class Main {
         System.out.println("element: " + list.get(0));
         System.out.println("element: " + list.get(2));
         System.out.println("list size: " + list.count());
+
+        System.out.println("Reversing the list:");
+        list.reverse();
+        for (Integer i : list) {
+            System.out.println(i);
+        }
+
     }
 }

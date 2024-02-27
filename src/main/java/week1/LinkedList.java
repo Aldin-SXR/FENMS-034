@@ -83,6 +83,19 @@ public class LinkedList<Data> implements Iterable<Data> {
         // your code
     }
 
+    public void reverse() {
+        Node<Data> current = head;                                              // 1
+        Node<Data> previous = null;                                             // 1
+
+        while (current != null) {                                               // 2
+            Node<Data> next = current.next;                                     // 3
+            current.next = previous;                                            // 4
+            previous = current;                                                 // 5
+            current = next;                                                     // 6
+        }
+        head = previous;                                                        // 7
+    }
+
     /* Return the size of the linked list */
     public int count() {
         return size;
