@@ -18,7 +18,7 @@ public class Stack<Data> {
 
     /* Check if the stack is empty */
     public boolean isEmpty() {
-        return top == null;
+        return size == 0;
     }
 
     /* Remove the top item from the stack, and return its data */
