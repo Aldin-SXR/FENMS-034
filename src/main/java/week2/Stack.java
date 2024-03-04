@@ -1,5 +1,7 @@
 package week2;
 
+import java.util.NoSuchElementException;
+
 public class Stack<Data> {
     private Node<Data> top = null;
     private int size = 0;
@@ -22,7 +24,7 @@ public class Stack<Data> {
     /* Remove the top item from the stack, and return its data */
     public Data pop() {
         if (isEmpty()) {													// 1
-            throw new IndexOutOfBoundsException("The stack is empty.");		// 1
+            throw new NoSuchElementException("The stack is empty.");		// 1
         }																	// 1
         Data item = top.data; 												// 2
         top = top.next; 													// 3
@@ -33,5 +35,14 @@ public class Stack<Data> {
     /* Return the current size of the stack */
     public int size() {
         return size;
+    }
+
+    /* Reads an item at the top of the stack, without removing it */
+    public Data peek() {
+        if (isEmpty()) {												// 1
+            throw new NoSuchElementException("Stack is empty!");		// 1
+        }
+
+        return top.data;											    // 2
     }
 }

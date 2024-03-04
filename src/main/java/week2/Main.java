@@ -10,6 +10,7 @@ public class Main {
         stack.push(5);
 
         System.out.println("Stack demo: ");
+        System.out.println("peek: " + stack.peek());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
@@ -25,6 +26,7 @@ public class Main {
         queue.enqueue(3);
 
         System.out.println("Queue demo: ");
+        System.out.println("peek: " + queue.peek());
         System.out.println(queue.dequeue());
         System.out.println(queue.dequeue());
         System.out.println(queue.dequeue());

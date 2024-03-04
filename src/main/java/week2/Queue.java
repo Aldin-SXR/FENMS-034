@@ -1,5 +1,7 @@
 package week2;
 
+import java.util.NoSuchElementException;
+
 public class Queue<Data> {
     private Node<Data> head = null;
     private Node<Data> tail = null;
@@ -29,9 +31,9 @@ public class Queue<Data> {
     }
 
     /* Removes an item from the front of the queue, and returns its data */
-    public Data dequeue() throws IndexOutOfBoundsException {
+    public Data dequeue() {
         if (isEmpty()) {												// 1
-            throw new IndexOutOfBoundsException("Queue is empty!");		// 1
+            throw new NoSuchElementException("Queue is empty!");		// 1
         }
 
         Data data = head.data;											// 2
@@ -43,5 +45,14 @@ public class Queue<Data> {
         }
 
         return data;													// 6
+    }
+
+    /* Reads an item at the front of the queue, without removing it */
+    public Data peek() {
+        if (isEmpty()) {												// 1
+            throw new NoSuchElementException("Queue is empty!");		// 1
+        }
+
+        return head.data;											    // 2
     }
 }
