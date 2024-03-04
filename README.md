@@ -7,5 +7,8 @@ Data Structures and Algorithms @ International Burch University (2023 - 2024)
 - [[Week 1] Lab document - Introduction to Java, Maven and Git](https://docs.google.com/document/d/171yWaYxAzLqxmwKGs4TTIGy7P66LJL1BR-RkYWdpBKA/edit?usp=sharing)
 - [[Week 1] Lab document - Linked Lists in Java](https://docs.google.com/document/d/1w7H8DCt1TTd3QCVGKmxT58OdUvhXTWXTxNmf0efjOs0/edit?usp=sharing)
 
+## Week 2: Stacks and Queues
+- [[Week 2] Lecture slides - Stacks and Queues](https://docs.google.com/presentation/d/1ZDKFIHJ9uABDHLKJ9TS7P4HkKce3MYrg7BlEnGyVRTA/edit?usp=sharing)
+- [[Week 2] Lab document - Stacks and Queues in Java](https://docs.google.com/document/d/1hp9c4lyW9lU6NOlCiXlhmFp8eHXJGEosWkhugy8FFG0/edit?usp=sharing)
 ---
 https://ibu.edu.ba @ 2024
