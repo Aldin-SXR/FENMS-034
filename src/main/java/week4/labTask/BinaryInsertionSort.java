@@ -7,7 +7,7 @@ public class BinaryInsertionSort {
     }
 
     public static <Data extends Comparable<Data>> int findInsertionPoint(LinkedList<Data> ll, int high, Data key) {
-        // your cod here (next line is a placeholder)
+        // your code here (next line is a placeholder)
         return 0;
     }
 }
