@@ -6,10 +6,12 @@ import java.util.Random;
 
 public class EmpiricalAnalysis {
     public static void main(String[] args) {
-        int arraySize = 1000;
+        int arraySize = 1000000;
         // Change the algorithm ("bubble", "selection", "insertion" or "shell") and the number of elements
-
-        runAndMeasureSortAlgorithm("bubble", arraySize);
+        // runAndMeasureSortAlgorithm("bubble", arraySize);
+        // runAndMeasureSortAlgorithm("selection", arraySize);
+        // runAndMeasureSortAlgorithm("insertion", arraySize);
+        runAndMeasureSortAlgorithm("shell", arraySize);
     }
 
     public static void runAndMeasureSortAlgorithm(String algorithm, int arraySize) {

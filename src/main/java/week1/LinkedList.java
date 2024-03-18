@@ -75,7 +75,13 @@ public class LinkedList<Data> implements Iterable<Data> {
 
     /* Add an element to a linked list by index (0-index) */
     public void add(int index, Data data) {
-        // your code
+        if (index == 0) {
+            addToFront(data);
+        } else if (index == size) {
+            addToRear(data);
+        } else {
+
+        }
     }
 
     /* Delete an element from a linked list by index (0-index) */

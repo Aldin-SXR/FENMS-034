@@ -1,6 +1,7 @@
 package week4;
 
 public class SelectionSort extends AbstractSort {
+
     /* Selection sort algorithm */
     public static void sort(int[] elements) {
         for (int i = 0; i < elements.length; i++) {             // 1
