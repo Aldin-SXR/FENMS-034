@@ -16,8 +16,12 @@ Data Structures and Algorithms @ International Burch University (2023 - 2024)
 - [[Week 3] Lab document - Binary Search & Bubble Sort](https://docs.google.com/document/d/1m5YqHrpP7rhOnRmZxkMIQC_1mWI_V5mZG-qyyosC0r8/edit?usp=sharing)
 
 ## Week 4: Elementary Sorts
-- [[Week 3] Lecture slides - Elementary Sorts](https://docs.google.com/presentation/d/1jjZ57TAnWrnBizlZNSCMknMRwieOp4bGW92-6gHXGTI/edit?usp=sharing)
-- [[Week 3] Lab document - Elementary Sorting Algorithms](https://docs.google.com/document/d/1ddiiK8B8XxhZMCb83P9qEtleG9d85puyJXRNptxshs8/edit?usp=sharing)
+- [[Week 4] Lecture slides - Elementary Sorts](https://docs.google.com/presentation/d/1jjZ57TAnWrnBizlZNSCMknMRwieOp4bGW92-6gHXGTI/edit?usp=sharing)
+- [[Week 4] Lab document - Elementary Sorting Algorithms](https://docs.google.com/document/d/1ddiiK8B8XxhZMCb83P9qEtleG9d85puyJXRNptxshs8/edit?usp=sharing)
+
+## Week 5: Merge Sort
+- [[Week 5] Lecture slides - Merge Sort](https://docs.google.com/presentation/d/1v_zeIS-3-d3slnf6yqn0ngmmIM3uevVhKjTlaoXLtdc/edit?usp=sharing)
+- [[Week 5] Lab document - Merge Sort Algorithm](https://docs.google.com/document/d/1rqb7Xm2f77Hc5PFyjktFAE1ad8GSfXURjxzs7IKkars/edit?usp=sharing)
 
 ---
 https://ibu.edu.ba @ 2024
