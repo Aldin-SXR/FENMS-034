@@ -3,7 +3,7 @@ package week5.labTask;
 public class TimSort {
 
     public static <Data extends Comparable<Data>> void sort(Data[] elements, int threshold) {
-        // HINT: It is not possible to create new generic array in Java,
+        // HINT: It is not possible to directly create new generic array in Java,
         // so you can use this workaround - create a Comparable array and cast it
         // Data[] aux = (Data[]) new Comparable[elements.length];
 
