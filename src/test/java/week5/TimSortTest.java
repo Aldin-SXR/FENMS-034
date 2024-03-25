@@ -1,10 +1,12 @@
 package week5;
 
 import org.junit.jupiter.api.Test;
-import week4.labTask.BinaryInsertionSort;
-import week4.labTask.LinkedList;
 import week5.labTask.TimSort;
 
+import java.util.Arrays;
+import java.util.Random;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TimSortTest {
@@ -152,5 +154,23 @@ public class TimSortTest {
         assertEquals(12, array[5]);
         assertEquals(19, array[6]);
         assertEquals(21, array[7]);
+    }
+
+    @Test
+    public void testLargeRandomSort() {
+        int size = 10000000;
+        Integer[] array = new Integer[size];
+        Random random = new Random();
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt(size * 10);
+        }
+
+        Integer[] sorted = array.clone();
+        Arrays.sort(sorted);
+
+        assertEquals(77, TimSort.calculateRunLength(size, 128));
+        TimSort.sort(array, 64);
+        assertArrayEquals(sorted, array);
     }
 }
